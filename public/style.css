@@ -124,9 +124,11 @@ h1,h2,h3{
   justify-content:space-between;
   padding:10px 14px 10px 16px;
   transition:box-shadow .35s var(--ease);
+  flex-wrap:nowrap;
+  overflow:hidden;
 }
 
-.brand{ display:flex; align-items:center; gap:12px; }
+.brand{ display:flex; align-items:center; gap:12px; flex-shrink:0; min-width:0; }
 .brand img{
   width:46px; height:46px;
   border-radius:50%;
@@ -190,6 +192,7 @@ h1,h2,h3{
   background:none;
   border:none;
   cursor:pointer;
+  flex-shrink:0;
   padding:10px;
 }
 .burger span{ width:22px; height:2px; background:var(--slate); display:block; border-radius:2px; }
